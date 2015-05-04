@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="map" style="width: 100%; height: 100%; position: fixed;"></div>
+
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ baseUrl }}/assets/css/leaflet-0.7.3.css" />
+    <link rel="stylesheet" href="{{ baseUrl }}/assets/css/MarkerCluster.css" />
+    <link rel="stylesheet" href="{{ baseUrl }}/assets/css/MarkerCluster.default.css" />
+{% endblock %}
+
+{% block scripts %}
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{{ baseUrl }}/assets/js/AwBase.js"></script>
+    <script src="{{ baseUrl }}/assets/js/leaflet.0.7.min.js"></script>
+    <script src="{{ baseUrl }}/assets/js/markercluster.leaflet.js"></script>
+    <script src="{{ baseUrl }}/assets/js/leafletMap.js"></script>
+    <script src="{{ baseUrl }}/assets/js/leafletClusterMap.js"></script>
+    <script src="{{ baseUrl }}/assets/js/clubLayerMap.js"></script>
+    <script src="{{ baseUrl }}/assets/js/map.js"></script>
+
+{% endblock %}

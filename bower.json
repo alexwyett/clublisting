@@ -1,0 +1,10 @@
+{
+    "name": "clublisting",
+    "version": "0.0.1",
+    "dependencies": {
+        "foundation": "5.5.2",
+        "html5shiv": "~3.7.2",
+        "normalize-css": "~3.0.3"
+    },
+    "private": true
+}
