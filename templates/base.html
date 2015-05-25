@@ -4,8 +4,11 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ title | default('Club Map') }}</title>
-        <link rel="stylesheet" href="{{ baseUrl }}/assets/foundation/css/foundation.css" />
-        <script src="{{ baseUrl }}/assets/foundation/js/vendor/modernizr.js"></script>
+        <link rel="stylesheet" href="{{ baseUrl }}/assets/foundation-icons/foundation-icons.css" />
+        <link rel="stylesheet" href="{{ baseUrl }}/bower_components/foundation/css/foundation.css" />
+        <script src="{{ baseUrl }}/bower_components/foundation/js/vendor/modernizr.js"></script>
+        <script src="{{ baseUrl }}/bower_components/jquery/dist/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
         
         {% block styles %}
 
@@ -13,7 +16,7 @@
         
         <script type="text/javascript">
             var CLUBS = CLUBS || {};
-            CLUBS.basePath = '{{ baseUrl}}';
+            CLUBS.basePath = '{{ baseUrl }}';
         </script>
         
     </head>

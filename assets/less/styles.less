@@ -1,0 +1,74 @@
+@clubcolor: midnightblue;
+@clubfontcolor: white;
+@juniorclubcolor: pink;
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.c-clubs,
+.c-map {
+    height: 100%;
+    position: fixed;
+}
+
+.c-clubs {
+    width: 30%;
+    left: 0;
+    
+    > .c-title {
+        padding: 1em;
+        margin: 0;
+        font-size: 100%;
+        
+        &.heading {
+            background: blueviolet;
+            color: white;
+            font-size: 120%;
+        }
+    }
+    
+    &_listing {
+        overflow-y: scroll; 
+    }
+}
+
+.c-map {
+    width: 70%;
+    right: 0;
+}
+
+
+.c-club {
+    margin: 1em;
+    border: 1px solid @clubcolor;
+    border-radius: 2px;
+    
+    .c-title {
+        font-size: 100%;
+        background: @clubcolor;
+        padding: 0.5em;
+        margin: 0;
+        color: @clubfontcolor;
+        position: relative;
+        
+        i {
+            position: absolute;
+            right: 1em;
+        }
+    }
+    
+    dl {
+        margin: 0;
+        padding: 0.5em;
+        font-size: 80%;
+        
+        dt {
+            .button {
+                padding: 0.5em 1em;
+                margin: 0 0 0 1em;
+            }
+        }
+    }
+}

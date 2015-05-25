@@ -7,9 +7,17 @@
 //    };
 //};
 
+
+// Extend the Default marker class
+var clubIcon2 = L.Icon.Default.extend({
+    options: {
+        //iconUrl: CLUBS.basePath + '/assets/css/images/marker-icon.png' 
+    }
+});
+
 var clubLayerMap = leafletClusterMap.extend({
-    init: function() {
-        this._super();
+    init: function(args) {
+        this._super(args);
         that = this;
         loaded = false;
         
@@ -104,16 +112,12 @@ var clubLayerMap = leafletClusterMap.extend({
     },
     
     defineMarker: function(feature, latlng) {
-
-        //Extend the Default marker class
-        var icon = L.Icon.Default.extend({
-            options: {
-                //iconUrl: CLUBS.basePath + '/assets/css/images/marker-icon.png' 
+        var ic = new clubIcon2();
+        return L.marker(
+            latlng,
+            {
+                icon: ic
             }
-        });
-        
-        var ic = new icon();
-        
-        return L.marker(latlng, { icon: ic });
+        );
     }
 });

@@ -29,5 +29,13 @@ var leafletClusterMap = leafletMap.extend({
         return {
             padding: [20, 20]
         };
+    },
+    
+    getMarkerClusters: function() {
+        return this.markerClusters;
+    },
+    
+    getMarkers: function() {
+        return this.getMarkerClusters().getLayers();
     }
 });

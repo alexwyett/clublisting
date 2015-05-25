@@ -3,24 +3,27 @@
 require_once 'vendor/autoload.php';
 require_once 'connect.php';
 
+// Club data
+$clubs = new \aw\clubapiclient\collection\Club();
+$clubs->setLimit(500)->fetch();
+
 // Define routes
 $app->get(
     '/', 
-    function () use ($app) {        
+    function () use ($app, $clubs) {        
         // Render index view
         $app->render(
             'index.html',
-            array()
+            array(
+                'clubs' => $clubs
+            )
         );
     }
 );
 
 $app->get(
     '/clubs.json', 
-    function () use ($app) {
-    
-        $clubs = new \aw\clubapiclient\collection\Club();
-        $clubs->setLimit(500)->fetch();
+    function () use ($app, $clubs) {
 
         $venueData = array();
         foreach ($clubs as $club) {
@@ -77,6 +80,7 @@ $app->get(
                         ),
                         'properties' => array(
                             'venue' => array(
+                                'id'=> $clubVenue->getVenue()->getId(),
                                 'name'=> $clubVenue->getVenue()->getName(),
                                 'address' => (string) $clubVenue->getVenue()->getAddress()
                             ),

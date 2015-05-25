@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bcb093a356bc8da5c6f980cdad608daf",
+    "hash": "bc5b6bd8bebb28201eae49d0530bdd39",
     "packages": [
         {
             "name": "alexwyett/ClubApiClient",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/alexwyett/ClubApiClient.git",
-                "reference": "1203deb63b490ac348001a3177cb00f7785d2e37"
+                "reference": "1a8362bbadb118919a07208cbf53ee123abfb396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alexwyett/ClubApiClient/zipball/1203deb63b490ac348001a3177cb00f7785d2e37",
-                "reference": "1203deb63b490ac348001a3177cb00f7785d2e37",
+                "url": "https://api.github.com/repos/alexwyett/ClubApiClient/zipball/1a8362bbadb118919a07208cbf53ee123abfb396",
+                "reference": "1a8362bbadb118919a07208cbf53ee123abfb396",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "source": "https://github.com/alexwyett/ClubApiClient/tree/master",
                 "issues": "https://github.com/alexwyett/ClubApiClient/issues"
             },
-            "time": "2015-04-28 14:00:19"
+            "time": "2015-05-04 12:45:37"
         },
         {
             "name": "guzzlehttp/guzzle",
