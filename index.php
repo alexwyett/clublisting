@@ -52,6 +52,7 @@ $app->get(
             }
             
             $clubData = array(
+                'id' => $club->getId(),
                 'name' => $club->getName(),
                 'description' => $club->getName(),
                 'playTimes' => array(),

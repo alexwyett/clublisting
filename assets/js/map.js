@@ -42,6 +42,14 @@ jQuery(document).ready(function() {
         });
     });
     
+    jQuery('body').on('click', '.show-venue', function() {
+        jQuery('.c-club').removeClass('highlight');
+        var target = jQuery(this).attr('href');
+        jQuery(target).addClass('highlight');
+        jQuery(".c-clubs_listing").scrollTo(target, 1000);
+        return false;
+    });
+    
     document.addEventListener("tpmb_toggleCat_after", function(e) {
         if (plugin.getCluster().getLayers().length == 0) {
             plugin.resetCluster();

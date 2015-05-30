@@ -107,7 +107,14 @@ var clubLayerMap = leafletClusterMap.extend({
     },
     
     definePopup: function(feature, layer) {
-        tag = '<p>' + feature.properties.venue.name + '</p>';
+        tag = '<h4>' + feature.properties.venue.name + '</h4>';
+        if (feature.properties.hasOwnProperty('clubs')) {
+            tag += '<p>The following clubs play here: </p><ul>';
+            for (var i = 0; i < feature.properties.clubs.length; i++) {
+                tag += '<li><a href="#club' + feature.properties.clubs[i].id + '" class="show-venue">' + feature.properties.clubs[i].name + '</a></li>';
+            }
+            tag += '</ul>';
+        }
         layer.bindPopup(tag);
     },
     

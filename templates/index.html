@@ -7,7 +7,7 @@
     
     <section class="c-clubs_listing">
         {% for club in clubs %}
-            <div class="c-club">
+            <div class="c-club" id="club{{ club.getId }}">
                 <h2 class="c-title c-title-medium">{{ club.getName }}<i class="fi-torsos-all"></i></h2>
                 <dl>
                     {% for venue in club.getClubVenues %}
@@ -63,6 +63,14 @@
     <script src="{{ baseUrl }}/assets/js/leafletMap.js"></script>
     <script src="{{ baseUrl }}/assets/js/leafletClusterMap.js"></script>
     <script src="{{ baseUrl }}/assets/js/clubLayerMap.js"></script>
+    <script type="text/javascript">
+        jQuery.fn.scrollTo = function(elem, speed) { 
+            $(this).animate({
+                scrollTop:  $(this).scrollTop() - $(this).offset().top + $(elem).offset().top 
+            }, typeof speed === 'undefined' ? 1000 : speed); 
+            return this; 
+        };
+    </script>
     <script src="{{ baseUrl }}/assets/js/map.js"></script>
 
 {% endblock %}
