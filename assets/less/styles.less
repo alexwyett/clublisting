@@ -15,22 +15,23 @@ body {
     .heading {
         background: blueviolet;
         color: white;
-        font-size: 100%;
         padding: 1em;
     
         .c-title {
             padding: 0;
             margin: 0;
-            font-size: 160%;
+            font-size: 140%;
         }
         
         p {
             margin-bottom: 0;
+            font-size: 80%;
         }
     }
     
     &_listing {
         overflow-y: scroll; 
+        overflow-x: hidden;
     }
 }
 
@@ -58,6 +59,7 @@ body {
         margin: 0;
         padding: 0.5em;
         font-size: 80%;
+        word-break: break-word;
         
         dt {
             .button {

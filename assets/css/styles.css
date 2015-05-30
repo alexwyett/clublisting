@@ -7,19 +7,20 @@ body {
 .c-clubs .heading {
   background: blueviolet;
   color: white;
-  font-size: 100%;
   padding: 1em;
 }
 .c-clubs .heading .c-title {
   padding: 0;
   margin: 0;
-  font-size: 160%;
+  font-size: 140%;
 }
 .c-clubs .heading p {
   margin-bottom: 0;
+  font-size: 80%;
 }
 .c-clubs_listing {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .c-club {
   margin: 1em;
@@ -42,6 +43,7 @@ body {
   margin: 0;
   padding: 0.5em;
   font-size: 80%;
+  word-break: break-word;
 }
 .c-club dl dt .button {
   padding: 0.5em 1em;
