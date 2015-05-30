@@ -11,7 +11,7 @@
 // Extend the Default marker class
 var clubIcon2 = L.Icon.Default.extend({
     options: {
-        //iconUrl: CLUBS.basePath + '/assets/css/images/marker-icon.png' 
+        iconUrl: CLUBS.basePath + '/assets/js/images/marker-icon.png' 
     }
 });
 
