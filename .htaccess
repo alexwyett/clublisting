@@ -6,7 +6,7 @@ RewriteEngine On
 #
 
 # RewriteBase equivalent - Dev
-RewriteCond %{HTTP_HOST} !^localhost$
+RewriteCond %{HTTP_HOST} ^localhost$
 RewriteRule . - [E=REWRITEBASE:/clublisting/]
 
 # Rewriting
