@@ -16,6 +16,27 @@
                         <dd>{{ ts }}</dd>
                         {% endfor %}
                     {% endfor %}
+                    
+                    {% if club.getContacts.getTotal > 0 %}
+                        <dt>Contact:</dt>
+                        {% for contact in club.getContacts %}
+                            <dd>
+                                {{ contact }}
+                                {% if contact.getPrivate == false and contact.getTelephoneNumbers|length > 0 %}
+                                    <br>Tel: {{ contact.getTelephoneNumbers|join(', ') }}
+                                {% endif %}
+                            </dd>
+                        {% endfor %}
+                    {% endif %}
+                    
+                    {% if club.getLinks.getTotal() > 0 %}
+                        <dt>Links:</dt>
+                        {% for link in club.getLinks %}
+                            <dd>
+                                {{ link }}
+                            </dd>
+                        {% endfor %}
+                    {% endif %}
                 </dl>
             </div>
         {% endfor %}

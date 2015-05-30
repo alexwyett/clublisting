@@ -34,8 +34,10 @@ jQuery(document).ready(function() {
         var id = jQuery(this).attr('href').slice(1);
         jQuery.each(plugin.getMarkers(), function(i, v) {
             if (parseInt(v.feature.properties.venue.id) === parseInt(id)) {
-                //v.openPopup();
-                plugin.getMap().panTo(v.getLatLng()).setZoom(14);
+                plugin.markerClusters.zoomToShowLayer(v, function() {
+                    v.openPopup();
+                    plugin.getMap().panTo(v.getLatLng());
+                });
             }
         });
     });
