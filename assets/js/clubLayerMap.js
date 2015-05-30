@@ -115,6 +115,7 @@ var clubLayerMap = leafletClusterMap.extend({
             }
             tag += '</ul>';
         }
+        tag += '<p><a href="https://maps.google.com?saddr=Current+Location&daddr=' + layer.getLatLng().lat + ',' + layer.getLatLng().lng + '" target="_blank">Click to get directions</a></p>';
         layer.bindPopup(tag);
     },
     
