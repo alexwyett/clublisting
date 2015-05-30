@@ -7,36 +7,31 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-.c-clubs,
 .c-map {
-    height: 100%;
-    position: fixed;
+    height: 50%;
 }
 
-.c-clubs {
-    width: 30%;
-    left: 0;
-    
-    > .c-title {
-        padding: 1em;
-        margin: 0;
+.c-clubs {    
+    .heading {
+        background: blueviolet;
+        color: white;
         font-size: 100%;
+        padding: 1em;
+    
+        .c-title {
+            padding: 0;
+            margin: 0;
+            font-size: 160%;
+        }
         
-        &.heading {
-            background: blueviolet;
-            color: white;
-            font-size: 120%;
+        p {
+            margin-bottom: 0;
         }
     }
     
     &_listing {
         overflow-y: scroll; 
     }
-}
-
-.c-map {
-    width: 70%;
-    right: 0;
 }
 
 
@@ -82,4 +77,22 @@ body {
     padding: 0.5em 1em !important;
     margin: 0;
     display: inline-block;
+}
+
+@media only screen and (min-width: 48em) {
+    .c-clubs,
+    .c-map {
+        height: 100%;
+        position: fixed !important;
+    }
+    
+    .c-clubs {
+        width: 30%;
+        left: 0;
+    }
+
+    .c-map {
+        width: 70%;
+        right: 0;
+    }
 }

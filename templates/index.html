@@ -4,8 +4,16 @@
 
 {% block content %}
 
+<section id="map" class="c-map">
+    <noscript>Please enable javascript to see the map</noscript>
+</section>
 <aside class="c-clubs">
-    <h1 class="c-title heading">Badminton clubs in Norfolk</h1>
+    <header class="heading">
+        <h1 class="c-title heading">
+            Badminton clubs in Norfolk
+        </h1>
+        <p>Below is a list of badminton clubs and who to contact in Norfolk.  Click on the view button to see where their venue is located.</p>
+    </header>
     
     <section class="c-clubs_listing">
         {% for club in clubs %}
@@ -44,9 +52,6 @@
         {% endfor %}
     </section>
 </aside>
-<section id="map" class="c-map">
-    <noscript>Please enable javascript to see the map</noscript>
-</section>
 
 {% endblock %}
 
