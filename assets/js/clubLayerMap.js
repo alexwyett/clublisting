@@ -111,7 +111,7 @@ var clubLayerMap = leafletClusterMap.extend({
         if (feature.properties.hasOwnProperty('clubs')) {
             tag += '<p>The following clubs play here: </p><ul>';
             for (var i = 0; i < feature.properties.clubs.length; i++) {
-                tag += '<li><a href="#club' + feature.properties.clubs[i].id + '" class="show-venue">' + feature.properties.clubs[i].name + '</a></li>';
+                tag += '<li>' + feature.properties.clubs[i].name + ' <a href="#club' + feature.properties.clubs[i].id + '" class="show-venue button tiny round">View details</a></li>';
             }
             tag += '</ul>';
         }

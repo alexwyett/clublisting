@@ -1,83 +1,64 @@
-/* line 6, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\000036}}
 body {
   font-family: 'Roboto Slab', serif;
 }
-/* line 10, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000310}}
 .c-clubs,
 .c-map {
   height: 100%;
   position: fixed;
 }
-/* line 16, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000316}}
 .c-clubs {
   width: 30%;
   left: 0;
 }
-/* line 20, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000320}}
 .c-clubs > .c-title {
   padding: 1em;
   margin: 0;
   font-size: 100%;
 }
-/* line 25, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000325}}
 .c-clubs > .c-title.heading {
   background: blueviolet;
   color: white;
   font-size: 120%;
 }
-/* line 32, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000332}}
 .c-clubs_listing {
   overflow-y: scroll;
 }
-/* line 37, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000337}}
 .c-map {
   width: 70%;
   right: 0;
 }
-/* line 43, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000343}}
 .c-club {
   margin: 1em;
-  border: 1px solid #191970;
+  border: 1px solid midnightblue;
   border-radius: 2px;
 }
-/* line 48, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000348}}
 .c-club .c-title {
   font-size: 100%;
-  background: #191970;
+  background: midnightblue;
   padding: 0.5em;
   margin: 0;
-  color: #ffffff;
+  color: white;
   position: relative;
 }
-/* line 56, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000356}}
 .c-club .c-title i {
   position: absolute;
   right: 1em;
 }
-/* line 62, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000362}}
 .c-club dl {
   margin: 0;
   padding: 0.5em;
   font-size: 80%;
 }
-/* line 68, /home/alex/Documents/clublisting/assets/less/styles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/alex\/Documents\/clublisting\/assets\/less\/styles\.less}line{font-family:\0000368}}
 .c-club dl dt .button {
   padding: 0.5em 1em;
   margin: 0 0 0 1em;
 }
-
 .c-club.highlight {
-    background: rgba(255, 255, 0, 0.5);
+  background: rgba(255, 255, 0, 0.5);
+}
+.show-venue {
+  color: white !important;
+  padding: 0.5em 1em !important;
+  margin: 0;
+  display: inline-block;
 }
